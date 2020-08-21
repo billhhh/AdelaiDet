@@ -1,8 +1,6 @@
-_BASE_: "Base-FCOS.yaml"
+_BASE_: "Base-CondInst.yaml"
 MODEL:
   WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
   RESNETS:
     DEPTH: 50
-INPUT:
-  MIN_SIZE_TRAIN: (800,)
-OUTPUT_DIR: "output/fcos/R_50_1x"
+OUTPUT_DIR: "output/condinst_MS_R_50_1x"
